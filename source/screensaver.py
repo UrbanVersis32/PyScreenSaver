@@ -3,17 +3,6 @@
 # Python Version Validation
 import sys
 
-print("Python Version: " + sys.version)
-
-check = sys.version[0:1] # Trim system version string so that the variable is a string of only "2" or "3"
-
-if check == "3": # Correct Python version
-	pass
-	
-else: # Outdated Python Version (Version 2)
-	print("\nYour Python Version is Outdated.")
-	sys.exit()
-
 # Continue code
 import turtle
 # Lines 19-22 are imported on all screen savers to build Tkinter window
@@ -30,7 +19,7 @@ from circular import screensaver as ss5
 from magiclight import screensaver as ss6
 from clock import screensaver as ss7
 
-print("\nWelcome to the Screen Saver Program!")
+print("\nWelcome to the PyScreenSaver Program!")
 print("Running Screensaver...")
 
 def closewindow():
@@ -41,7 +30,7 @@ def closewindow():
 
 def info():
 	print("Showing Info")
-	messagebox.showinfo("About Screen Saver", "PyScreenSaver v0.1.0; Python Version:" + sys.version)
+	messagebox.showinfo("About Screen Saver", "PyScreenSaver v0.2.0; Python Version:" + sys.version)
 	
 # Create Tkinter window
 
