@@ -8,7 +8,6 @@ import turtle
 # Lines 19-22 are imported on all screen savers to build Tkinter window
 from tkinter import * 
 from tkinter import messagebox
-from tkinter import ttk
 from tkinter.ttk import *
 # Import the run functions from the screen saver files
 from hexagonal import screensaver as ss1

@@ -4,13 +4,12 @@
 import turtle
 from tkinter import *
 from tkinter import messagebox
-from tkinter import ttk
 from tkinter.ttk import *
 
 # Loop
 def loop():
 	screen = turtle.Turtle()
-	turtle.title("Circler Screen Saver")
+	turtle.title("Circular Screen Saver")
 	turtle.bgcolor("black")
 	loop = 0
 	circle = 0

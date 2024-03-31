@@ -4,7 +4,6 @@
 import turtle
 from tkinter import *
 from tkinter import messagebox
-from tkinter import ttk
 from tkinter.ttk import *
 from random import randint
 from time import *
@@ -69,7 +68,7 @@ def screensaver():
 	rawhigh = Spinbox(tk, from_=0, to=9, width = 64)
 	rawhigh.grid(column = 0, row = 4)
 	
-	intervaltxt = Label(tk, text = "Interval (In Milliseconds): ", font = ("Arial", 20))
+	intervaltxt = Label(tk, text = "Interval between numbers (In Milliseconds): ", font = ("Arial", 20))
 	intervaltxt.grid(column = 0, row = 5)
 	rawinterval = Spinbox(tk, from_=0, to=9, width = 16)
 	rawinterval.grid(column = 0, row = 6)
