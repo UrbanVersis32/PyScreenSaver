@@ -1,8 +1,6 @@
 #!/bin/bash
-# PyScreenSaver Python Application
+# PyScreenSaver Python Application Linux runner
 
-echo "This is the Linux PyScreenSaver Runner."
+echo "This is the Linux PyScreenSaver Runner.\n"
 
-echo ""
-
-python3 source/screensaver.py
+python3 source/screensaver.py || echo "You need to install Python to run this program"
