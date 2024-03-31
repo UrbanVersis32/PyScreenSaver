@@ -4,10 +4,10 @@ By Urban Versis 32
 ## Basic info
 A simple screensaver program for Python built using Tkinter and Turtle. I found this project that I made a while ago and I decided to continue it.
 
-##Versions
+## Versions
 * v0.1.0-beta - The original project
 
-##Python Modules Used
+## Python Modules Used
 * turtle
 * tkinter
 * tkinter.ttk
