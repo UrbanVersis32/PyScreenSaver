@@ -24,9 +24,9 @@ def loop():
 	if high == 0: # Create Default value
 		high = 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999 # Characters: 128
 		
-	print("Low Number:", low)
-	print("High Number:", high)
-	print("Interval:", interval)
+	print("Low Number: ", low)
+	print("High Number: ", high)
+	print("Interval: ", interval)
 	num = 3
 	# 3-Second countdown so the user can read the above message
 	for x in range(0, 3):
@@ -60,17 +60,19 @@ def screensaver():
 	lowtxt = Label(tk, text = "Lowest Possible Number: ", font = ("Arial", 20))
 	lowtxt.grid(column = 0, row = 1)
 	rawlow = Spinbox(tk, from_=0, to=9, width = 64)
-	rawlow.insert(END, 1)
+	rawlow.insert(END, 0)
 	rawlow.grid(column = 0, row = 2)
 	
 	hightxt = Label(tk, text = "Highest Possible Number (Enter 0 for default): ", font = ("Arial", 20))
 	hightxt.grid(column = 0, row = 3)
 	rawhigh = Spinbox(tk, from_=0, to=9, width = 64)
+	rawhigh.insert(END, 0)
 	rawhigh.grid(column = 0, row = 4)
 	
 	intervaltxt = Label(tk, text = "Interval between numbers (In Milliseconds): ", font = ("Arial", 20))
 	intervaltxt.grid(column = 0, row = 5)
 	rawinterval = Spinbox(tk, from_=0, to=9, width = 16)
+	rawinterval.insert(END, 0)
 	rawinterval.grid(column = 0, row = 6)
 	
 	load = Button(tk, text = "Load Screen Saver", command = loop)
@@ -79,7 +81,7 @@ def screensaver():
 	close = Button(tk, text = "Close", command = close)
 	close.grid(column = 0, row = 8, pady = 10)
 
-	info = Label(tk, text = "By Urban Versis 32	Note: This Screen Saver runs in the black screen \n rather than opening up a new window", font = ("Arial", 10))
+	info = Label(tk, text = "By Urban Versis 32. \n	Note: This Screen Saver runs in the black screen \n rather than opening up a new window", font = ("Arial", 10))
 	info.grid(column = 0, row = 9)
 	
 	# No tk.mainloop() here; See line 42 for details
